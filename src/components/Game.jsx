@@ -10,20 +10,12 @@ function Game() {
   const [highscore, setHighscore] = useState(0);
 
   const [nextBlock, setNextBlock] = useState(null);
-  const [savedBlock, setSavedBlock] = useState(null);
-
   const [initialLoad, setInitialLoad] = useState(true);
   const [gameEnded, setGameEnded] = useState(true);
-
   const [restartKey, setRestartKey] = useState(false);
-  const [currentWord, setCurrentWord] = useState({
-    word: "We",
-    iteration: 0,
-  });
   const startNewGame = () => {
     setScore(0);
     setNextBlock(null);
-    setSavedBlock(null);
     setInitialLoad(false);
     setGameEnded(false);
   };
@@ -88,7 +80,6 @@ function Game() {
     <div key={restartKey} style={getGameStyle()}>
       <Board
         setNextBlock={setNextBlock}
-        setSavedBlock={setSavedBlock}
         addScore={addScore}
         restartGame={() => setRestartKey((prev) => !prev)}
         gameOver={() => setGameEnded(true)}

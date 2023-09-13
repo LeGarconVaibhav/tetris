@@ -10,7 +10,7 @@ class Block {
     this.row = C.BLOCK_START_COORDINATES.row;
   };
 
-  getShape = () => "undefined";
+  // getShape = () => "undefined";
 
   getRow = () => this.row;
 
