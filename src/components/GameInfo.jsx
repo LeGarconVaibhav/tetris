@@ -8,7 +8,7 @@ const getStyle = () => ({
   border: 'solid black 1px',
   fontFamily: 'Graduate',
   backgroundColor: 'black',
-  color: 'white',
+  color: 'gray',
   border: 'solid 1px white',
 });
 

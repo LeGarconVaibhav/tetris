@@ -1,27 +1,26 @@
-import React from 'react';
-import Game from './Game';
+import React from "react";
+import Game from "./Game";
 
 function GameContainer() {
   const getGameContainerStyle = () => ({
-    minHeight: '100vh',
-    minWidth: '100vw',
-    backgroundColor: 'black',
-    color: 'white',
+    minHeight: "100vh",
+    minWidth: "80vw",
+    backgroundColor: "black",
+    color: "gray",
   });
 
   const getGameTitleStyle = () => ({
-    textAlign: 'center',
-    color: 'white',
-    fontSize: 80,
+    textAlign: "left",
+    fontSize: 50,
     margin: 0,
-    fontFamily: 'Bungee Shade',
-    backgroundColor: 'black',
-    color: 'white'
+    fontFamily: "Time New Roman",
+    backgroundColor: "black",
+    color: "gray",
   });
 
-  return(
+  return (
     <div style={getGameContainerStyle()}>
-      <h1 style={getGameTitleStyle()}>TETRIS</h1>
+      <h1 style={getGameTitleStyle()}>USERFACET</h1>
       <Game />
     </div>
   );
