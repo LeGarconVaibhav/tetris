@@ -1,5 +1,5 @@
 {
-  "name": "tetris game for Company Interview",
+  "name": "tetris",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
